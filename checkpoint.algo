@@ -1,0 +1,27 @@
+ALGORITHM checkpoint
+VAR
+    ch:String;
+    word:Integer:=0;
+    voy:Integer:=0;
+    length:Integer:=0;
+    i:Integer:=0;
+    voywels:Array ofChar[6]:=("a","e","i","u","o","y");
+
+
+BEGIN
+     read(ch)
+     length:=ch.length
+     FOR i FROM 0 TO ch.length-1   DO
+        IF (ch[i]=" "or ch[i]=".") THEN
+            world:=world+1
+        END_IF
+        IF (ch[i]in voywels) THEN
+            voy:=voy+1
+
+           
+        END_IF
+        write("the number of characters:",length)
+        write("the number of world:",world)
+        write("the number of voyels:",voy)
+     END_FOR
+END
